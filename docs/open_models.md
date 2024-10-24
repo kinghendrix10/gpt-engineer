@@ -146,3 +146,25 @@ Then you call `gpt-engineer` with your service endpoint `--azure https://aoi-res
 
 Example:
 `gpt-engineer --azure https://myairesource.openai.azure.com ./projects/example/ my-gpt4-project-name`
+
+Using Claude API
+==================
+
+To use the Claude API, you need to set your Claude API key:
+- `export ANTHROPIC_API_KEY=[your api key]`
+
+Then you can call `gpt-engineer` with the Claude model name.
+
+Example:
+`gpt-engineer ./projects/example/ claude-v1`
+
+Using Groq LLM API
+==================
+
+To use the Groq LLM API, you need to set your Groq LLM API key:
+- `export GROQ_API_KEY=[your api key]`
+
+Then you can call `gpt-engineer` with the Groq LLM model name.
+
+Example:
+`gpt-engineer ./projects/example/ groq-llm-v1`

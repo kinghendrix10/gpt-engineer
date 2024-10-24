@@ -89,6 +89,11 @@ def load_env_if_needed():
     if os.getenv("ANTHROPIC_API_KEY") is None:
         load_dotenv(dotenv_path=os.path.join(os.getcwd(), ".env"))
 
+    if os.getenv("GROQ_API_KEY") is None:
+        load_dotenv()
+    if os.getenv("GROQ_API_KEY") is None:
+        load_dotenv(dotenv_path=os.path.join(os.getcwd(), ".env"))
+
 
 def concatenate_paths(base_path, sub_path):
     # Compute the relative path from base_path to sub_path
